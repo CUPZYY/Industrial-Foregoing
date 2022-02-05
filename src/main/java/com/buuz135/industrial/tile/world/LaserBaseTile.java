@@ -193,6 +193,7 @@ public class LaserBaseTile extends CustomSidedTileEntity implements IHasDisplayS
                                 }
                             }
                         }
+                        increase = Math.max(increase, 0);
                         items.add(new ItemStackWeightedItem(entry.getStack(), entry.getWeight() + increase));
                     }
                 }
